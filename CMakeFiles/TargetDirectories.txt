@@ -1,0 +1,3 @@
+/home/alexander/CLionProjects/TDP005/Campusrunner/campusrunner/CMakeFiles/campusrunner.dir
+/home/alexander/CLionProjects/TDP005/Campusrunner/campusrunner/CMakeFiles/edit_cache.dir
+/home/alexander/CLionProjects/TDP005/Campusrunner/campusrunner/CMakeFiles/rebuild_cache.dir

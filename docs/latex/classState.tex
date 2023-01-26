@@ -1,0 +1,63 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$State.\+h$>$}
+
+
+
+Inheritance diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classState_a783d52422b544bb226e13de8ecfd6ad6}{$\sim$\+State}} ()=default
+\item 
+virtual State\+\_\+\+Action \mbox{\hyperlink{classState_a516f5a45b9d21575648fe0a30b4fd810}{update}} (sf\+::\+Render\+Window \&window)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface of the different states in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_a783d52422b544bb226e13de8ecfd6ad6}\label{classState_a783d52422b544bb226e13de8ecfd6ad6}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily virtual State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+Virtual destructor of the state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_a516f5a45b9d21575648fe0a30b4fd810}\label{classState_a516f5a45b9d21575648fe0a30b4fd810}} 
+\index{State@{State}!update@{update}}
+\index{update@{update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual State\+\_\+\+Action State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+No standard behaviour. 
+
+Implemented in \mbox{\hyperlink{classProlog__State_a68e66a395335f4e70edb4ba394ef9413}{Prolog\+\_\+\+State}}, \mbox{\hyperlink{classPlay__State_ac2cb75159b64f447b821bea1fa506f04}{Play\+\_\+\+State}}, and \mbox{\hyperlink{classMenu__State_af5792b3ea75812e422df84317ab33478}{Menu\+\_\+\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+State.\+h\end{DoxyCompactItemize}

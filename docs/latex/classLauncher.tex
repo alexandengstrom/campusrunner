@@ -1,0 +1,109 @@
+\hypertarget{classLauncher}{}\doxysection{Launcher Class Reference}
+\label{classLauncher}\index{Launcher@{Launcher}}
+
+
+{\ttfamily \#include $<$Launcher.\+h$>$}
+
+
+
+Inheritance diagram for Launcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classLauncher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Launcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classLauncher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLauncher_a664daeb4c33b7ffea5c7d62afef74d08}{Launcher}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classLauncher_af3c6c98058f5c3adda39a41e8415894e}{update}} () override
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classLauncher_a2e335650b3e6e090008e59eb2db4a090}{get\+\_\+rect}} () const override
+\item 
+void \mbox{\hyperlink{classLauncher_af60bcf3230fd1e354e523c1d463e8658}{launch}} ()
+\item 
+bool \mbox{\hyperlink{classLauncher_aa85535fe0979ffd1d336744b86f6694c}{is\+\_\+launched}} () const
+\item 
+void \mbox{\hyperlink{classLauncher_ae23dee2b1674303bb9da5ca31987623e}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A laucher in the game that the player can use to launch himself up in the air. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLauncher_a664daeb4c33b7ffea5c7d62afef74d08}\label{classLauncher_a664daeb4c33b7ffea5c7d62afef74d08}} 
+\index{Launcher@{Launcher}!Launcher@{Launcher}}
+\index{Launcher@{Launcher}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{Launcher()}{Launcher()}}
+{\footnotesize\ttfamily Launcher\+::\+Launcher (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a launcher Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classLauncher_a664daeb4c33b7ffea5c7d62afef74d08_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLauncher_a2e335650b3e6e090008e59eb2db4a090}\label{classLauncher_a2e335650b3e6e090008e59eb2db4a090}} 
+\index{Launcher@{Launcher}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Launcher\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the hitbox of the launcher. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a12b80139f4945017bbddc265b06af351}{Game\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classLauncher_aa85535fe0979ffd1d336744b86f6694c}\label{classLauncher_aa85535fe0979ffd1d336744b86f6694c}} 
+\index{Launcher@{Launcher}!is\_launched@{is\_launched}}
+\index{is\_launched@{is\_launched}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{is\_launched()}{is\_launched()}}
+{\footnotesize\ttfamily bool Launcher\+::is\+\_\+launched (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if the laucher has been launched in the last second, else false. \mbox{\Hypertarget{classLauncher_af60bcf3230fd1e354e523c1d463e8658}\label{classLauncher_af60bcf3230fd1e354e523c1d463e8658}} 
+\index{Launcher@{Launcher}!launch@{launch}}
+\index{launch@{launch}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily void Launcher\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tell the laucher that it has been used. \mbox{\Hypertarget{classLauncher_ae23dee2b1674303bb9da5ca31987623e}\label{classLauncher_ae23dee2b1674303bb9da5ca31987623e}} 
+\index{Launcher@{Launcher}!reset@{reset}}
+\index{reset@{reset}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Launcher\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the laucher. \mbox{\Hypertarget{classLauncher_af3c6c98058f5c3adda39a41e8415894e}\label{classLauncher_af3c6c98058f5c3adda39a41e8415894e}} 
+\index{Launcher@{Launcher}!update@{update}}
+\index{update@{update}!Launcher@{Launcher}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Launcher\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the texture of the object depending on if the launcher recently has been launched or not. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}{Game\+\_\+\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Launcher.\+h\item 
+Launcher.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,142 @@
+\hypertarget{classGame__Object}{}\doxysection{Game\+\_\+\+Object Class Reference}
+\label{classGame__Object}\index{Game\_Object@{Game\_Object}}
+
+
+{\ttfamily \#include $<$Game\+\_\+\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Game\+\_\+\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame__Object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+\_\+\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classGame__Object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame__Object_a96655f3dbc452b6b9dcaa547a405bb79}{Game\+\_\+\+Object}} (float x, float y, int w, int h)
+\item 
+virtual void \mbox{\hyperlink{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}{update}} ()
+\item 
+virtual void \mbox{\hyperlink{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae}{render}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{classCamera}{Camera}} \&camera)
+\item 
+virtual sf\+::\+Float\+Rect \mbox{\hyperlink{classGame__Object_a12b80139f4945017bbddc265b06af351}{get\+\_\+rect}} () const
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classGame__Object_a162a84cb7cf1f8ce26f56e6a1196ad9c}{get\+\_\+position}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classGame__Object_a200b030bb6c3dce284366859be4a4328}{position}}
+\item 
+int \mbox{\hyperlink{classGame__Object_a30342d92e67b0398e1ea1e28cb17b2dd}{width}}
+\item 
+int \mbox{\hyperlink{classGame__Object_afacb9e4203563bfa614ddf3382675a37}{height}}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classGame__Object_a4cb045641315c3c81f3f6081a35e1ac6}{sprite}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface of all game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame__Object_a96655f3dbc452b6b9dcaa547a405bb79}\label{classGame__Object_a96655f3dbc452b6b9dcaa547a405bb79}} 
+\index{Game\_Object@{Game\_Object}!Game\_Object@{Game\_Object}}
+\index{Game\_Object@{Game\_Object}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{Game\_Object()}{Game\_Object()}}
+{\footnotesize\ttfamily Game\+\_\+\+Object\+::\+Game\+\_\+\+Object (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Create a game object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame__Object_a162a84cb7cf1f8ce26f56e6a1196ad9c}\label{classGame__Object_a162a84cb7cf1f8ce26f56e6a1196ad9c}} 
+\index{Game\_Object@{Game\_Object}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Game\+\_\+\+Object\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the position of the game object. \mbox{\Hypertarget{classGame__Object_a12b80139f4945017bbddc265b06af351}\label{classGame__Object_a12b80139f4945017bbddc265b06af351}} 
+\index{Game\_Object@{Game\_Object}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Game\+\_\+\+Object\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the hitbox of the game object. 
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a260d4f1a63947fbd1aaf00a36b29e0ec}{Rolling\+\_\+\+Stone}}, \mbox{\hyperlink{classMoving__Object_a28432ad4ab6dd81dc3a6b2e1da1e362a}{Moving\+\_\+\+Object}}, \mbox{\hyperlink{classMoving__Block_ada349337f15b23e8d49c49736e1f512c}{Moving\+\_\+\+Block}}, \mbox{\hyperlink{classLauncher_a2e335650b3e6e090008e59eb2db4a090}{Launcher}}, \mbox{\hyperlink{classHarmful__Block_ac05c6e623e2c10edb5d2ffd7ab47bbf0}{Harmful\+\_\+\+Block}}, \mbox{\hyperlink{classFlamer_aedd77ef2c61c43adcc4a666ea1b1ecb8}{Flamer}}, \mbox{\hyperlink{classBridge_ae6125d95a3d811e61456ca5ddb085b3d}{Bridge}}, and \mbox{\hyperlink{classBouncer_a0c2076eb59bc017b6b310d3246a1e97c}{Bouncer}}.
+
+\mbox{\Hypertarget{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae}\label{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae}} 
+\index{Game\_Object@{Game\_Object}!render@{render}}
+\index{render@{render}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Object\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Tell the camera that the object is ready to be rendered to the screen. 
+
+Reimplemented in \mbox{\hyperlink{classHealthpack_a3af9f1277a65cc4fb880639aa1bd5610}{Healthpack}}, and \mbox{\hyperlink{classEnemy_af7edf395e9bfb0abe96186e1c5904e00}{Enemy}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}\label{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}} 
+\index{Game\_Object@{Game\_Object}!update@{update}}
+\index{update@{update}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Update the game object. The default behavior is to update the sprites position to the current position. 
+
+Reimplemented in \mbox{\hyperlink{classLauncher_af3c6c98058f5c3adda39a41e8415894e}{Launcher}}, \mbox{\hyperlink{classHealthpack_a32278408ef0befa3052bae21e1c634ee}{Healthpack}}, \mbox{\hyperlink{classFlamer_a5b390ffc3fedf0e45ee27781e067731f}{Flamer}}, \mbox{\hyperlink{classFan_ae342fcdbfde1f2a567fcf83740fbf374}{Fan}}, and \mbox{\hyperlink{classBouncer_a775ef2f7f0aada38200af6a01591c9d4}{Bouncer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGame__Object_afacb9e4203563bfa614ddf3382675a37}\label{classGame__Object_afacb9e4203563bfa614ddf3382675a37}} 
+\index{Game\_Object@{Game\_Object}!height@{height}}
+\index{height@{height}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Game\+\_\+\+Object\+::height\hspace{0.3cm}{\ttfamily [protected]}}
+
+The height of the game object. \mbox{\Hypertarget{classGame__Object_a200b030bb6c3dce284366859be4a4328}\label{classGame__Object_a200b030bb6c3dce284366859be4a4328}} 
+\index{Game\_Object@{Game\_Object}!position@{position}}
+\index{position@{position}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Game\+\_\+\+Object\+::position\hspace{0.3cm}{\ttfamily [protected]}}
+
+The current position of the game object. \mbox{\Hypertarget{classGame__Object_a4cb045641315c3c81f3f6081a35e1ac6}\label{classGame__Object_a4cb045641315c3c81f3f6081a35e1ac6}} 
+\index{Game\_Object@{Game\_Object}!sprite@{sprite}}
+\index{sprite@{sprite}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Game\+\_\+\+Object\+::sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+The sprite of the game object. \mbox{\Hypertarget{classGame__Object_a30342d92e67b0398e1ea1e28cb17b2dd}\label{classGame__Object_a30342d92e67b0398e1ea1e28cb17b2dd}} 
+\index{Game\_Object@{Game\_Object}!width@{width}}
+\index{width@{width}!Game\_Object@{Game\_Object}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Game\+\_\+\+Object\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+The width of the game object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+\_\+\+Object.\+h\item 
+Game\+\_\+\+Object.\+cpp\end{DoxyCompactItemize}

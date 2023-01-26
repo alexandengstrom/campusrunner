@@ -1,0 +1,152 @@
+\hypertarget{classEnemy}{}\doxysection{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+
+
+Inheritance diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classEnemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a0e3ad09de3d7cc19e5f01dd4d9424ee8}{Enemy}} (float x, float y)
+\item 
+\mbox{\Hypertarget{classEnemy_a333bee13b13906b3527fe1323424e9f9}\label{classEnemy_a333bee13b13906b3527fe1323424e9f9}} 
+{\bfseries Enemy} (float x, float y, int w, int h)
+\item 
+void \mbox{\hyperlink{classEnemy_af7edf395e9bfb0abe96186e1c5904e00}{render}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{classCamera}{Camera}} \&camera) override
+\item 
+void \mbox{\hyperlink{classEnemy_a267a7fa77b96fd3de20611ed1853ff0e}{update}} (float friction, float gravity) override
+\item 
+void \mbox{\hyperlink{classEnemy_a988a56f83292f90226c7228edf0777c6}{spawn}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEnemy_a91eb14875532107ea1ce5018b2f36571}{update\+\_\+animation\+\_\+state}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classEnemy_a98766d083fc49e746a37d0dc69be09e0}{speed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An enemy in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnemy_a0e3ad09de3d7cc19e5f01dd4d9424ee8}\label{classEnemy_a0e3ad09de3d7cc19e5f01dd4d9424ee8}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create an enemy. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classEnemy_a0e3ad09de3d7cc19e5f01dd4d9424ee8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnemy_af7edf395e9bfb0abe96186e1c5904e00}\label{classEnemy_af7edf395e9bfb0abe96186e1c5904e00}} 
+\index{Enemy@{Enemy}!render@{render}}
+\index{render@{render}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Enemy\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Tell the camera that the enemy wants to be rendered, but only if the enemy is alive. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae}{Game\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classEnemy_af7edf395e9bfb0abe96186e1c5904e00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEnemy_a988a56f83292f90226c7228edf0777c6}\label{classEnemy_a988a56f83292f90226c7228edf0777c6}} 
+\index{Enemy@{Enemy}!spawn@{spawn}}
+\index{spawn@{spawn}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{spawn()}{spawn()}}
+{\footnotesize\ttfamily void Enemy\+::spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tell the enemy to start moving. \mbox{\Hypertarget{classEnemy_a267a7fa77b96fd3de20611ed1853ff0e}\label{classEnemy_a267a7fa77b96fd3de20611ed1853ff0e}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Enemy\+::update (\begin{DoxyParamCaption}\item[{float}]{friction,  }\item[{float}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the enemy\textquotesingle{}s position if the enemy is alive, also updated the animation state and texture. 
+
+Implements \mbox{\hyperlink{classMoving__Object}{Moving\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classEnemy_a267a7fa77b96fd3de20611ed1853ff0e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEnemy_a91eb14875532107ea1ce5018b2f36571}\label{classEnemy_a91eb14875532107ea1ce5018b2f36571}} 
+\index{Enemy@{Enemy}!update\_animation\_state@{update\_animation\_state}}
+\index{update\_animation\_state@{update\_animation\_state}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update\_animation\_state()}{update\_animation\_state()}}
+{\footnotesize\ttfamily void Enemy\+::update\+\_\+animation\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Update the animation state of the enemy. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_a6d34b5be975320f7a824da1a97224d13}{Moving\+\_\+\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a0b5b962fbf7e4914eaa374e4feb16a96}{Rolling\+\_\+\+Stone}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classEnemy_a91eb14875532107ea1ce5018b2f36571_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEnemy_a98766d083fc49e746a37d0dc69be09e0}\label{classEnemy_a98766d083fc49e746a37d0dc69be09e0}} 
+\index{Enemy@{Enemy}!speed@{speed}}
+\index{speed@{speed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Enemy\+::speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+The speed of the enemy. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Enemy.\+h\item 
+Enemy.\+cpp\end{DoxyCompactItemize}

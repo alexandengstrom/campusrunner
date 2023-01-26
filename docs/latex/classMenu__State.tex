@@ -1,0 +1,193 @@
+\hypertarget{classMenu__State}{}\doxysection{Menu\+\_\+\+State Class Reference}
+\label{classMenu__State}\index{Menu\_State@{Menu\_State}}
+
+
+{\ttfamily \#include $<$Menu\+\_\+\+State.\+h$>$}
+
+
+
+Inheritance diagram for Menu\+\_\+\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMenu__State__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Menu\+\_\+\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classMenu__State__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMenu__State_abcb7829ec9a970e44efa5c235e988cfb}{Menu\+\_\+\+State}} ()
+\item 
+State\+\_\+\+Action \mbox{\hyperlink{classMenu__State_af5792b3ea75812e422df84317ab33478}{update}} (sf\+::\+Render\+Window \&window) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMenu__State_aafa3e6183041668d7c8365d07840b293}{init\+\_\+text}} ()
+\item 
+virtual State\+\_\+\+Action \mbox{\hyperlink{classMenu__State_a058af2de0751e2018b9bff1a3852c421}{execute\+\_\+command}} (Menu\+\_\+\+Choice \mbox{\hyperlink{classMenu__State_ad64938ee3d6d976959ea2a7df2d155ba}{choice}}) const
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenu__State_aab3d596df3881aef94bc26666e58f9dd}{create\+\_\+text}} (sf\+::\+Font const \&\mbox{\hyperlink{classMenu__State_ac24d84715868e4d4794389ed9422561c}{font}}, std\+::string const \&text, sf\+::\+Vector2f const \&position)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classMenu__State_aaa0aa81649b2c15974da84c1e46da20a}{background}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenu__State_acf92d637c72670888435ffd6c167821d}{new\+\_\+game}}
+\item 
+sf\+::\+Text \mbox{\hyperlink{classMenu__State_a8812b4260250ce63b944424224739be4}{exit}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classMenu__State_ac24d84715868e4d4794389ed9422561c}{font}}
+\item 
+Menu\+\_\+\+Choice \mbox{\hyperlink{classMenu__State_ad64938ee3d6d976959ea2a7df2d155ba}{choice}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classState}{State}} responsible for showing the start menu . 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMenu__State_abcb7829ec9a970e44efa5c235e988cfb}\label{classMenu__State_abcb7829ec9a970e44efa5c235e988cfb}} 
+\index{Menu\_State@{Menu\_State}!Menu\_State@{Menu\_State}}
+\index{Menu\_State@{Menu\_State}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{Menu\_State()}{Menu\_State()}}
+{\footnotesize\ttfamily Menu\+\_\+\+State\+::\+Menu\+\_\+\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Create the state. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_abcb7829ec9a970e44efa5c235e988cfb_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMenu__State_aab3d596df3881aef94bc26666e58f9dd}\label{classMenu__State_aab3d596df3881aef94bc26666e58f9dd}} 
+\index{Menu\_State@{Menu\_State}!create\_text@{create\_text}}
+\index{create\_text@{create\_text}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{create\_text()}{create\_text()}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+\_\+\+State\+::create\+\_\+text (\begin{DoxyParamCaption}\item[{sf\+::\+Font const \&}]{font,  }\item[{std\+::string const \&}]{text,  }\item[{sf\+::\+Vector2f const \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Helper to create a text object. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_aab3d596df3881aef94bc26666e58f9dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMenu__State_a058af2de0751e2018b9bff1a3852c421}\label{classMenu__State_a058af2de0751e2018b9bff1a3852c421}} 
+\index{Menu\_State@{Menu\_State}!execute\_command@{execute\_command}}
+\index{execute\_command@{execute\_command}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{execute\_command()}{execute\_command()}}
+{\footnotesize\ttfamily State\+\_\+\+Action Menu\+\_\+\+State\+::execute\+\_\+command (\begin{DoxyParamCaption}\item[{Menu\+\_\+\+Choice}]{choice }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Helper that returns a \mbox{\hyperlink{classState}{State}} Action depending on an integer. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_a058af2de0751e2018b9bff1a3852c421_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classMenu__State_a058af2de0751e2018b9bff1a3852c421_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMenu__State_aafa3e6183041668d7c8365d07840b293}\label{classMenu__State_aafa3e6183041668d7c8365d07840b293}} 
+\index{Menu\_State@{Menu\_State}!init\_text@{init\_text}}
+\index{init\_text@{init\_text}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{init\_text()}{init\_text()}}
+{\footnotesize\ttfamily void Menu\+\_\+\+State\+::init\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Helper that initializes all text-\/objects used. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_aafa3e6183041668d7c8365d07840b293_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_aafa3e6183041668d7c8365d07840b293_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMenu__State_af5792b3ea75812e422df84317ab33478}\label{classMenu__State_af5792b3ea75812e422df84317ab33478}} 
+\index{Menu\_State@{Menu\_State}!update@{update}}
+\index{update@{update}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily State\+\_\+\+Action Menu\+\_\+\+State\+::update (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles key presses. Updates and renders the menu table. Returns a \mbox{\hyperlink{classState}{State}} Action. 
+
+Implements \mbox{\hyperlink{classState_a516f5a45b9d21575648fe0a30b4fd810}{State}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMenu__State_af5792b3ea75812e422df84317ab33478_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMenu__State_aaa0aa81649b2c15974da84c1e46da20a}\label{classMenu__State_aaa0aa81649b2c15974da84c1e46da20a}} 
+\index{Menu\_State@{Menu\_State}!background@{background}}
+\index{background@{background}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily sf\+::\+Sprite Menu\+\_\+\+State\+::background\hspace{0.3cm}{\ttfamily [protected]}}
+
+The background of the menu. \mbox{\Hypertarget{classMenu__State_ad64938ee3d6d976959ea2a7df2d155ba}\label{classMenu__State_ad64938ee3d6d976959ea2a7df2d155ba}} 
+\index{Menu\_State@{Menu\_State}!choice@{choice}}
+\index{choice@{choice}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{choice}{choice}}
+{\footnotesize\ttfamily Menu\+\_\+\+Choice Menu\+\_\+\+State\+::choice\hspace{0.3cm}{\ttfamily [protected]}}
+
+A menu choice used to choose which color to render the menu table. Used in execute\+\_\+command to decide what \mbox{\hyperlink{classState}{State}} Action to return. \mbox{\Hypertarget{classMenu__State_a8812b4260250ce63b944424224739be4}\label{classMenu__State_a8812b4260250ce63b944424224739be4}} 
+\index{Menu\_State@{Menu\_State}!exit@{exit}}
+\index{exit@{exit}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+\_\+\+State\+::exit\hspace{0.3cm}{\ttfamily [protected]}}
+
+Text in the menu table. \mbox{\Hypertarget{classMenu__State_ac24d84715868e4d4794389ed9422561c}\label{classMenu__State_ac24d84715868e4d4794389ed9422561c}} 
+\index{Menu\_State@{Menu\_State}!font@{font}}
+\index{font@{font}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily sf\+::\+Font Menu\+\_\+\+State\+::font\hspace{0.3cm}{\ttfamily [protected]}}
+
+The font used. \mbox{\Hypertarget{classMenu__State_acf92d637c72670888435ffd6c167821d}\label{classMenu__State_acf92d637c72670888435ffd6c167821d}} 
+\index{Menu\_State@{Menu\_State}!new\_game@{new\_game}}
+\index{new\_game@{new\_game}!Menu\_State@{Menu\_State}}
+\doxysubsubsection{\texorpdfstring{new\_game}{new\_game}}
+{\footnotesize\ttfamily sf\+::\+Text Menu\+\_\+\+State\+::new\+\_\+game\hspace{0.3cm}{\ttfamily [protected]}}
+
+Text in the menu table. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Menu\+\_\+\+State.\+h\item 
+Menu\+\_\+\+State.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,213 @@
+\hypertarget{classPlayer}{}\doxysection{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Inheritance diagram for Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlayer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a4c481b6493f9e0d550377c0d99763c82}{Player}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classPlayer_a6ff9f6248013734b9d91204195b3ee2d}{update}} (float friction, float gravity) override
+\item 
+void \mbox{\hyperlink{classPlayer_a58ebc646a0f0bba46515252eb0b15c51}{update\+\_\+graphics}} (\mbox{\hyperlink{classCamera}{Camera}} \&camera)
+\item 
+int \mbox{\hyperlink{classPlayer_a2872d173f697eed3c4813e382c75c91c}{get\+\_\+lives}} () const
+\item 
+std\+::string \mbox{\hyperlink{classPlayer_a877eae02c93978784627636c0f0d2341}{get\+\_\+current\+\_\+power\+\_\+up}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_a668f4e1b5d7e5cdac6488e88ae94bff8}{activate\+\_\+random\+\_\+power\+\_\+up}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a9b98867f1b4c68e678d1ab554c9828c0}{reset}} () override
+\item 
+void \mbox{\hyperlink{classPlayer_a957c5f410c50c3788854dbd7b91362e0}{use\+\_\+healthpack}} ()
+\item 
+bool \mbox{\hyperlink{classPlayer_a3e3dc1026b85b8360f4e6e9e78b0cb4a}{is\+\_\+ghost}} () const
+\item 
+bool \mbox{\hyperlink{classPlayer_a05990b33dd89088dbe3aff1f28555d56}{has\+\_\+super\+\_\+power}} () const
+\item 
+bool \mbox{\hyperlink{classPlayer_ab88a22fff53190ea190f9fd49608e17e}{is\+\_\+dying}} () const
+\item 
+void \mbox{\hyperlink{classPlayer_a88c2faffca41f0aedb89bf7615a40703}{jump}} (float force)
+\item 
+void \mbox{\hyperlink{classPlayer_a439b57f74329d559d559311303661d9f}{stop\+\_\+jumping}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_aa181d4e27fe0428512dc97ea16a36d51}{loose\+\_\+life}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_ab6950f26691ccba850a3c9d0deabc950}{set\+\_\+checkpoint}} (sf\+::\+Vector2f new\+\_\+position)
+\item 
+void \mbox{\hyperlink{classPlayer_a1ac1f10a53d1fbfe94feb25eb764b168}{start\+\_\+death\+\_\+animation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The player is the user controlled main character in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayer_a4c481b6493f9e0d550377c0d99763c82}\label{classPlayer_a4c481b6493f9e0d550377c0d99763c82}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a player. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classPlayer_a4c481b6493f9e0d550377c0d99763c82_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayer_a668f4e1b5d7e5cdac6488e88ae94bff8}\label{classPlayer_a668f4e1b5d7e5cdac6488e88ae94bff8}} 
+\index{Player@{Player}!activate\_random\_power\_up@{activate\_random\_power\_up}}
+\index{activate\_random\_power\_up@{activate\_random\_power\_up}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{activate\_random\_power\_up()}{activate\_random\_power\_up()}}
+{\footnotesize\ttfamily void Player\+::activate\+\_\+random\+\_\+power\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Activates a random power up. \mbox{\Hypertarget{classPlayer_a877eae02c93978784627636c0f0d2341}\label{classPlayer_a877eae02c93978784627636c0f0d2341}} 
+\index{Player@{Player}!get\_current\_power\_up@{get\_current\_power\_up}}
+\index{get\_current\_power\_up@{get\_current\_power\_up}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{get\_current\_power\_up()}{get\_current\_power\_up()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+\_\+current\+\_\+power\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns current power up as a string. \mbox{\Hypertarget{classPlayer_a2872d173f697eed3c4813e382c75c91c}\label{classPlayer_a2872d173f697eed3c4813e382c75c91c}} 
+\index{Player@{Player}!get\_lives@{get\_lives}}
+\index{get\_lives@{get\_lives}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{get\_lives()}{get\_lives()}}
+{\footnotesize\ttfamily int Player\+::get\+\_\+lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns number of player lives. \mbox{\Hypertarget{classPlayer_a05990b33dd89088dbe3aff1f28555d56}\label{classPlayer_a05990b33dd89088dbe3aff1f28555d56}} 
+\index{Player@{Player}!has\_super\_power@{has\_super\_power}}
+\index{has\_super\_power@{has\_super\_power}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{has\_super\_power()}{has\_super\_power()}}
+{\footnotesize\ttfamily bool Player\+::has\+\_\+super\+\_\+power (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if power up is active, else false. \mbox{\Hypertarget{classPlayer_ab88a22fff53190ea190f9fd49608e17e}\label{classPlayer_ab88a22fff53190ea190f9fd49608e17e}} 
+\index{Player@{Player}!is\_dying@{is\_dying}}
+\index{is\_dying@{is\_dying}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{is\_dying()}{is\_dying()}}
+{\footnotesize\ttfamily bool Player\+::is\+\_\+dying (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if player is about to die, else false. \mbox{\Hypertarget{classPlayer_a3e3dc1026b85b8360f4e6e9e78b0cb4a}\label{classPlayer_a3e3dc1026b85b8360f4e6e9e78b0cb4a}} 
+\index{Player@{Player}!is\_ghost@{is\_ghost}}
+\index{is\_ghost@{is\_ghost}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{is\_ghost()}{is\_ghost()}}
+{\footnotesize\ttfamily bool Player\+::is\+\_\+ghost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if player is immortal, else false. \mbox{\Hypertarget{classPlayer_a88c2faffca41f0aedb89bf7615a40703}\label{classPlayer_a88c2faffca41f0aedb89bf7615a40703}} 
+\index{Player@{Player}!jump@{jump}}
+\index{jump@{jump}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Player\+::jump (\begin{DoxyParamCaption}\item[{float}]{force }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{classPlayer}{Player}} vertical velocity is changed. \mbox{\Hypertarget{classPlayer_aa181d4e27fe0428512dc97ea16a36d51}\label{classPlayer_aa181d4e27fe0428512dc97ea16a36d51}} 
+\index{Player@{Player}!loose\_life@{loose\_life}}
+\index{loose\_life@{loose\_life}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{loose\_life()}{loose\_life()}}
+{\footnotesize\ttfamily void Player\+::loose\+\_\+life (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reduces player lives by one. \mbox{\Hypertarget{classPlayer_a9b98867f1b4c68e678d1ab554c9828c0}\label{classPlayer_a9b98867f1b4c68e678d1ab554c9828c0}} 
+\index{Player@{Player}!reset@{reset}}
+\index{reset@{reset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Player\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reset player position, velocity, turns off power ups and turns off active power ups. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_af27913d3af713b2d943c4339c96c8f07}{Moving\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classPlayer_a9b98867f1b4c68e678d1ab554c9828c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlayer_ab6950f26691ccba850a3c9d0deabc950}\label{classPlayer_ab6950f26691ccba850a3c9d0deabc950}} 
+\index{Player@{Player}!set\_checkpoint@{set\_checkpoint}}
+\index{set\_checkpoint@{set\_checkpoint}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{set\_checkpoint()}{set\_checkpoint()}}
+{\footnotesize\ttfamily void Player\+::set\+\_\+checkpoint (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{new\+\_\+position }\end{DoxyParamCaption})}
+
+Updates player starting position. \mbox{\Hypertarget{classPlayer_a1ac1f10a53d1fbfe94feb25eb764b168}\label{classPlayer_a1ac1f10a53d1fbfe94feb25eb764b168}} 
+\index{Player@{Player}!start\_death\_animation@{start\_death\_animation}}
+\index{start\_death\_animation@{start\_death\_animation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{start\_death\_animation()}{start\_death\_animation()}}
+{\footnotesize\ttfamily void Player\+::start\+\_\+death\+\_\+animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts player death animation. \mbox{\Hypertarget{classPlayer_a439b57f74329d559d559311303661d9f}\label{classPlayer_a439b57f74329d559d559311303661d9f}} 
+\index{Player@{Player}!stop\_jumping@{stop\_jumping}}
+\index{stop\_jumping@{stop\_jumping}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{stop\_jumping()}{stop\_jumping()}}
+{\footnotesize\ttfamily void Player\+::stop\+\_\+jumping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets jumping to false. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayer_a439b57f74329d559d559311303661d9f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlayer_a6ff9f6248013734b9d91204195b3ee2d}\label{classPlayer_a6ff9f6248013734b9d91204195b3ee2d}} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}\item[{float}]{friction,  }\item[{float}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Manager players direction and power ups. 
+
+Implements \mbox{\hyperlink{classMoving__Object}{Moving\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classPlayer_a58ebc646a0f0bba46515252eb0b15c51}\label{classPlayer_a58ebc646a0f0bba46515252eb0b15c51}} 
+\index{Player@{Player}!update\_graphics@{update\_graphics}}
+\index{update\_graphics@{update\_graphics}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update\_graphics()}{update\_graphics()}}
+{\footnotesize\ttfamily void Player\+::update\+\_\+graphics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+Animates the player. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPlayer_a58ebc646a0f0bba46515252eb0b15c51_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPlayer_a957c5f410c50c3788854dbd7b91362e0}\label{classPlayer_a957c5f410c50c3788854dbd7b91362e0}} 
+\index{Player@{Player}!use\_healthpack@{use\_healthpack}}
+\index{use\_healthpack@{use\_healthpack}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{use\_healthpack()}{use\_healthpack()}}
+{\footnotesize\ttfamily void Player\+::use\+\_\+healthpack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Adds a life to the player. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+h\item 
+Player.\+cpp\end{DoxyCompactItemize}

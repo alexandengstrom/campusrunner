@@ -1,0 +1,5 @@
+<map id="Audio_Manager::start_menu_music" name="Audio_Manager::start_menu_music">
+<area shape="rect" id="node1" title=" " alt="" coords="197,23,359,65"/>
+<area shape="rect" id="node2" href="$classGame__Engine.html#a2b53d222750d14766fba51e038cb8b8f" title=" " alt="" coords="7,5,148,32"/>
+<area shape="rect" id="node3" href="$classPlay__State.html#ac2cb75159b64f447b821bea1fa506f04" title=" " alt="" coords="5,56,149,83"/>
+</map>

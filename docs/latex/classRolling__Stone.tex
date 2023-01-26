@@ -1,0 +1,129 @@
+\hypertarget{classRolling__Stone}{}\doxysection{Rolling\+\_\+\+Stone Class Reference}
+\label{classRolling__Stone}\index{Rolling\_Stone@{Rolling\_Stone}}
+
+
+{\ttfamily \#include $<$Rolling\+\_\+\+Stone.\+h$>$}
+
+
+
+Inheritance diagram for Rolling\+\_\+\+Stone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRolling__Stone__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rolling\+\_\+\+Stone\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classRolling__Stone__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRolling__Stone_a5ef63bf6c426e487923c6a1f01e92073}{Rolling\+\_\+\+Stone}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classRolling__Stone_a50c3d143ec4ea6b32eb01a5c7bee9197}{update\+\_\+texture}} () override
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classRolling__Stone_a260d4f1a63947fbd1aaf00a36b29e0ec}{get\+\_\+rect}} () const override
+\item 
+void \mbox{\hyperlink{classRolling__Stone_add18d7bca060e8838009c6a3af7dc195}{stop\+\_\+vertical}} () override
+\item 
+void \mbox{\hyperlink{classRolling__Stone_a02cb0e7ae5b3f766e1fc9f759f565cf7}{change\+\_\+direction}} () override
+\item 
+void \mbox{\hyperlink{classRolling__Stone_a0b5b962fbf7e4914eaa374e4feb16a96}{update\+\_\+animation\+\_\+state}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A rolling enemy. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRolling__Stone_a5ef63bf6c426e487923c6a1f01e92073}\label{classRolling__Stone_a5ef63bf6c426e487923c6a1f01e92073}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!Rolling\_Stone@{Rolling\_Stone}}
+\index{Rolling\_Stone@{Rolling\_Stone}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{Rolling\_Stone()}{Rolling\_Stone()}}
+{\footnotesize\ttfamily Rolling\+\_\+\+Stone\+::\+Rolling\+\_\+\+Stone (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a rolling stone. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRolling__Stone_a5ef63bf6c426e487923c6a1f01e92073_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRolling__Stone_a02cb0e7ae5b3f766e1fc9f759f565cf7}\label{classRolling__Stone_a02cb0e7ae5b3f766e1fc9f759f565cf7}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!change\_direction@{change\_direction}}
+\index{change\_direction@{change\_direction}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{change\_direction()}{change\_direction()}}
+{\footnotesize\ttfamily void Rolling\+\_\+\+Stone\+::change\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Inverts horizontal movement and adds a slight bounce vertically. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_a564fc15838a0c540294e89bd64e287ee}{Moving\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classRolling__Stone_a260d4f1a63947fbd1aaf00a36b29e0ec}\label{classRolling__Stone_a260d4f1a63947fbd1aaf00a36b29e0ec}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Rolling\+\_\+\+Stone\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the hitbox of the rolling stone. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_a28432ad4ab6dd81dc3a6b2e1da1e362a}{Moving\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classRolling__Stone_add18d7bca060e8838009c6a3af7dc195}\label{classRolling__Stone_add18d7bca060e8838009c6a3af7dc195}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!stop\_vertical@{stop\_vertical}}
+\index{stop\_vertical@{stop\_vertical}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{stop\_vertical()}{stop\_vertical()}}
+{\footnotesize\ttfamily void Rolling\+\_\+\+Stone\+::stop\+\_\+vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Stops vertical movement in a bouncy manner. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_a3ba320133e6b6e64c6f99550de548802}{Moving\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRolling__Stone_add18d7bca060e8838009c6a3af7dc195_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classRolling__Stone_a0b5b962fbf7e4914eaa374e4feb16a96}\label{classRolling__Stone_a0b5b962fbf7e4914eaa374e4feb16a96}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!update\_animation\_state@{update\_animation\_state}}
+\index{update\_animation\_state@{update\_animation\_state}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{update\_animation\_state()}{update\_animation\_state()}}
+{\footnotesize\ttfamily void Rolling\+\_\+\+Stone\+::update\+\_\+animation\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates texture based on moving left or right. 
+
+Reimplemented from \mbox{\hyperlink{classEnemy_a91eb14875532107ea1ce5018b2f36571}{Enemy}}.
+
+\mbox{\Hypertarget{classRolling__Stone_a50c3d143ec4ea6b32eb01a5c7bee9197}\label{classRolling__Stone_a50c3d143ec4ea6b32eb01a5c7bee9197}} 
+\index{Rolling\_Stone@{Rolling\_Stone}!update\_texture@{update\_texture}}
+\index{update\_texture@{update\_texture}!Rolling\_Stone@{Rolling\_Stone}}
+\doxysubsubsection{\texorpdfstring{update\_texture()}{update\_texture()}}
+{\footnotesize\ttfamily void Rolling\+\_\+\+Stone\+::update\+\_\+texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates rolling stone texture based on velocity. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_aab7c82fa7c9a71f4e96317442accb7c5}{Moving\+\_\+\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Rolling\+\_\+\+Stone.\+h\item 
+Rolling\+\_\+\+Stone.\+cpp\end{DoxyCompactItemize}

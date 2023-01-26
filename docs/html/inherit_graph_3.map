@@ -1,0 +1,19 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classGame__Object.html" title=" " alt="" coords="5,233,116,260"/>
+<area shape="rect" id="node2" href="$classBouncer.html" title=" " alt="" coords="186,5,261,32"/>
+<area shape="rect" id="node3" href="$classCheckpoint.html" title=" " alt="" coords="176,56,271,83"/>
+<area shape="rect" id="node4" href="$classDoor.html" title=" " alt="" coords="197,107,250,133"/>
+<area shape="rect" id="node5" href="$classFlamer.html" title=" " alt="" coords="189,157,257,184"/>
+<area shape="rect" id="node6" href="$classHarmful__Block.html" title=" " alt="" coords="164,208,283,235"/>
+<area shape="rect" id="node7" href="$classHealthpack.html" title=" " alt="" coords="175,259,271,285"/>
+<area shape="rect" id="node8" href="$classLauncher.html" title=" " alt="" coords="183,309,264,336"/>
+<area shape="rect" id="node9" href="$classMoving__Object.html" title=" " alt="" coords="164,360,283,387"/>
+<area shape="rect" id="node14" href="$classSolid__Block.html" title=" " alt="" coords="175,411,272,437"/>
+<area shape="rect" id="node17" href="$classTreasure.html" title=" " alt="" coords="185,461,262,488"/>
+<area shape="rect" id="node10" href="$classEnemy.html" title=" " alt="" coords="354,259,421,285"/>
+<area shape="rect" id="node12" href="$classMoving__Block.html" title=" " alt="" coords="331,309,444,336"/>
+<area shape="rect" id="node13" href="$classPlayer.html" title=" " alt="" coords="356,360,419,387"/>
+<area shape="rect" id="node11" href="$classRolling__Stone.html" title=" " alt="" coords="492,259,603,285"/>
+<area shape="rect" id="node15" href="$classBridge.html" title=" " alt="" coords="355,411,419,437"/>
+<area shape="rect" id="node16" href="$classFan.html" title=" " alt="" coords="365,461,409,488"/>
+</map>

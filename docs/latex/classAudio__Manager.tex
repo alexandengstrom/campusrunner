@@ -1,0 +1,291 @@
+\hypertarget{classAudio__Manager}{}\doxysection{Audio\+\_\+\+Manager Class Reference}
+\label{classAudio__Manager}\index{Audio\_Manager@{Audio\_Manager}}
+
+
+{\ttfamily \#include $<$Audio\+\_\+\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Audio\+\_\+\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classAudio__Manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAudio__Manager_a2505708eae5a4340fc4cc677ca3fcfc8}{$\sim$\+Audio\+\_\+\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a301659f9a9d0c739eceb809924369df0}{start\+\_\+game\+\_\+music}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_ad33f92a8409cceee610cac606a7053dc}{stop\+\_\+game\+\_\+music}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_ac924682fa2440878198520e1a7ade770}{start\+\_\+menu\+\_\+music}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a22060a3c3c8e0965470096b466fa2184}{stop\+\_\+menu\+\_\+music}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a28aa64005c6542cc397149fbd0952454}{jump}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_aff53dd0fb0069b466930cedc9ee3bfe2}{bounce}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a3300ddcded0ef4998794695c766d382c}{enemy\+\_\+killed}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a39aee1fde58a253629e1a1530e5ceb34}{launch}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_ae708e363f40a7cb40c8d32302a17ef35}{healthpack\+\_\+picked\+\_\+up}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a42cce4538fcf6a6a3f1a3ec66ba220df}{player\+\_\+killed}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_ab2e72ea88b92699c1ad4a012a611845c}{checkpoint\+\_\+reached}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a9845684d5cc2ced8b62f4ffe798f8673}{open\+\_\+treasure}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a0427ec916056f886d68430eedca983cb}{rolling\+\_\+stone}} (sf\+::\+Vector2f const \&position, sf\+::\+Vector2f const \&velocity)
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a3796198d2fda2f9427eb198cb497cea3}{level\+\_\+complete}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a87e596ea88c3483541fa7b251ea0c069}{fan}} (sf\+::\+Vector2f const \&position)
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_ab62cbe3040d6d3a48163278eec050010}{flame}} (sf\+::\+Vector2f const \&position)
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a967fdd349cfcdcfd00cded5a06f98532}{end\+\_\+of\+\_\+jump}} ()
+\item 
+static void \mbox{\hyperlink{classAudio__Manager_a7e4b96afd4da34d3794f9779bd850edf}{game\+\_\+over}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Sound\+Buffer $\ast$ $>$ \mbox{\hyperlink{classAudio__Manager_aafb9f2561896f6e86c4123a418bb325f}{buffers}}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Sound $\ast$ $>$ \mbox{\hyperlink{classAudio__Manager_a4ebc347564474e35fccaccaedcfc8a45}{sounds}}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Music $\ast$ $>$ \mbox{\hyperlink{classAudio__Manager_ac99dea8c4e9834868632c79d2e5754be}{music}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Audio Manager handles all the sound in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAudio__Manager_a2505708eae5a4340fc4cc677ca3fcfc8}\label{classAudio__Manager_a2505708eae5a4340fc4cc677ca3fcfc8}} 
+\index{Audio\_Manager@{Audio\_Manager}!````~Audio\_Manager@{$\sim$Audio\_Manager}}
+\index{````~Audio\_Manager@{$\sim$Audio\_Manager}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$Audio\_Manager()}{~Audio\_Manager()}}
+{\footnotesize\ttfamily Audio\+\_\+\+Manager\+::$\sim$\+Audio\+\_\+\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles the memory. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAudio__Manager_aff53dd0fb0069b466930cedc9ee3bfe2}\label{classAudio__Manager_aff53dd0fb0069b466930cedc9ee3bfe2}} 
+\index{Audio\_Manager@{Audio\_Manager}!bounce@{bounce}}
+\index{bounce@{bounce}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{bounce()}{bounce()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::bounce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays a bounce-\/sound. \mbox{\Hypertarget{classAudio__Manager_ab2e72ea88b92699c1ad4a012a611845c}\label{classAudio__Manager_ab2e72ea88b92699c1ad4a012a611845c}} 
+\index{Audio\_Manager@{Audio\_Manager}!checkpoint\_reached@{checkpoint\_reached}}
+\index{checkpoint\_reached@{checkpoint\_reached}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{checkpoint\_reached()}{checkpoint\_reached()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::checkpoint\+\_\+reached (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the checkpoint-\/sound. \mbox{\Hypertarget{classAudio__Manager_a967fdd349cfcdcfd00cded5a06f98532}\label{classAudio__Manager_a967fdd349cfcdcfd00cded5a06f98532}} 
+\index{Audio\_Manager@{Audio\_Manager}!end\_of\_jump@{end\_of\_jump}}
+\index{end\_of\_jump@{end\_of\_jump}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{end\_of\_jump()}{end\_of\_jump()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::end\+\_\+of\+\_\+jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the sound of landing a jump. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAudio__Manager_a967fdd349cfcdcfd00cded5a06f98532_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_a3300ddcded0ef4998794695c766d382c}\label{classAudio__Manager_a3300ddcded0ef4998794695c766d382c}} 
+\index{Audio\_Manager@{Audio\_Manager}!enemy\_killed@{enemy\_killed}}
+\index{enemy\_killed@{enemy\_killed}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{enemy\_killed()}{enemy\_killed()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::enemy\+\_\+killed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays a enemy killed-\/sound. \mbox{\Hypertarget{classAudio__Manager_a87e596ea88c3483541fa7b251ea0c069}\label{classAudio__Manager_a87e596ea88c3483541fa7b251ea0c069}} 
+\index{Audio\_Manager@{Audio\_Manager}!fan@{fan}}
+\index{fan@{fan}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{fan()}{fan()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::fan (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f const \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the fan-\/sound. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classAudio__Manager_a87e596ea88c3483541fa7b251ea0c069_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_ab62cbe3040d6d3a48163278eec050010}\label{classAudio__Manager_ab62cbe3040d6d3a48163278eec050010}} 
+\index{Audio\_Manager@{Audio\_Manager}!flame@{flame}}
+\index{flame@{flame}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{flame()}{flame()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::flame (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f const \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays flamer-\/sound when it is flaming, but only if a flamer is visible. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classAudio__Manager_ab62cbe3040d6d3a48163278eec050010_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_a7e4b96afd4da34d3794f9779bd850edf}\label{classAudio__Manager_a7e4b96afd4da34d3794f9779bd850edf}} 
+\index{Audio\_Manager@{Audio\_Manager}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{game\_over()}{game\_over()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::game\+\_\+over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the game over-\/sound. \mbox{\Hypertarget{classAudio__Manager_ae708e363f40a7cb40c8d32302a17ef35}\label{classAudio__Manager_ae708e363f40a7cb40c8d32302a17ef35}} 
+\index{Audio\_Manager@{Audio\_Manager}!healthpack\_picked\_up@{healthpack\_picked\_up}}
+\index{healthpack\_picked\_up@{healthpack\_picked\_up}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{healthpack\_picked\_up()}{healthpack\_picked\_up()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::healthpack\+\_\+picked\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the healthpack pickup-\/sound. \mbox{\Hypertarget{classAudio__Manager_a28aa64005c6542cc397149fbd0952454}\label{classAudio__Manager_a28aa64005c6542cc397149fbd0952454}} 
+\index{Audio\_Manager@{Audio\_Manager}!jump@{jump}}
+\index{jump@{jump}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays a jump-\/sound. \mbox{\Hypertarget{classAudio__Manager_a39aee1fde58a253629e1a1530e5ceb34}\label{classAudio__Manager_a39aee1fde58a253629e1a1530e5ceb34}} 
+\index{Audio\_Manager@{Audio\_Manager}!launch@{launch}}
+\index{launch@{launch}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the launcher-\/sound. \mbox{\Hypertarget{classAudio__Manager_a3796198d2fda2f9427eb198cb497cea3}\label{classAudio__Manager_a3796198d2fda2f9427eb198cb497cea3}} 
+\index{Audio\_Manager@{Audio\_Manager}!level\_complete@{level\_complete}}
+\index{level\_complete@{level\_complete}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{level\_complete()}{level\_complete()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::level\+\_\+complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the level complete-\/sound. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classAudio__Manager_a3796198d2fda2f9427eb198cb497cea3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_a9845684d5cc2ced8b62f4ffe798f8673}\label{classAudio__Manager_a9845684d5cc2ced8b62f4ffe798f8673}} 
+\index{Audio\_Manager@{Audio\_Manager}!open\_treasure@{open\_treasure}}
+\index{open\_treasure@{open\_treasure}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{open\_treasure()}{open\_treasure()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::open\+\_\+treasure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the treasure-\/sound. \mbox{\Hypertarget{classAudio__Manager_a42cce4538fcf6a6a3f1a3ec66ba220df}\label{classAudio__Manager_a42cce4538fcf6a6a3f1a3ec66ba220df}} 
+\index{Audio\_Manager@{Audio\_Manager}!player\_killed@{player\_killed}}
+\index{player\_killed@{player\_killed}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{player\_killed()}{player\_killed()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::player\+\_\+killed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the death-\/sound. \mbox{\Hypertarget{classAudio__Manager_a0427ec916056f886d68430eedca983cb}\label{classAudio__Manager_a0427ec916056f886d68430eedca983cb}} 
+\index{Audio\_Manager@{Audio\_Manager}!rolling\_stone@{rolling\_stone}}
+\index{rolling\_stone@{rolling\_stone}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{rolling\_stone()}{rolling\_stone()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::rolling\+\_\+stone (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f const \&}]{position,  }\item[{sf\+::\+Vector2f const \&}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Plays the rolling stone-\/sound. The volume varies depending on how far away the stone is and how fast the stone is falling. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAudio__Manager_a0427ec916056f886d68430eedca983cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_a301659f9a9d0c739eceb809924369df0}\label{classAudio__Manager_a301659f9a9d0c739eceb809924369df0}} 
+\index{Audio\_Manager@{Audio\_Manager}!start\_game\_music@{start\_game\_music}}
+\index{start\_game\_music@{start\_game\_music}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{start\_game\_music()}{start\_game\_music()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::start\+\_\+game\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Starts the main theme. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAudio__Manager_a301659f9a9d0c739eceb809924369df0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_ac924682fa2440878198520e1a7ade770}\label{classAudio__Manager_ac924682fa2440878198520e1a7ade770}} 
+\index{Audio\_Manager@{Audio\_Manager}!start\_menu\_music@{start\_menu\_music}}
+\index{start\_menu\_music@{start\_menu\_music}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{start\_menu\_music()}{start\_menu\_music()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::start\+\_\+menu\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Starts the menu music. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classAudio__Manager_ac924682fa2440878198520e1a7ade770_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_ad33f92a8409cceee610cac606a7053dc}\label{classAudio__Manager_ad33f92a8409cceee610cac606a7053dc}} 
+\index{Audio\_Manager@{Audio\_Manager}!stop\_game\_music@{stop\_game\_music}}
+\index{stop\_game\_music@{stop\_game\_music}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{stop\_game\_music()}{stop\_game\_music()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::stop\+\_\+game\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stops the main theme. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classAudio__Manager_ad33f92a8409cceee610cac606a7053dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAudio__Manager_a22060a3c3c8e0965470096b466fa2184}\label{classAudio__Manager_a22060a3c3c8e0965470096b466fa2184}} 
+\index{Audio\_Manager@{Audio\_Manager}!stop\_menu\_music@{stop\_menu\_music}}
+\index{stop\_menu\_music@{stop\_menu\_music}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{stop\_menu\_music()}{stop\_menu\_music()}}
+{\footnotesize\ttfamily void Audio\+\_\+\+Manager\+::stop\+\_\+menu\+\_\+music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stops the menu music. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAudio__Manager_a22060a3c3c8e0965470096b466fa2184_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classAudio__Manager_aafb9f2561896f6e86c4123a418bb325f}\label{classAudio__Manager_aafb9f2561896f6e86c4123a418bb325f}} 
+\index{Audio\_Manager@{Audio\_Manager}!buffers@{buffers}}
+\index{buffers@{buffers}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{buffers}{buffers}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Sound\+Buffer $\ast$$>$ Audio\+\_\+\+Manager\+::buffers}
+
+Contains all soundbuffers. \mbox{\Hypertarget{classAudio__Manager_ac99dea8c4e9834868632c79d2e5754be}\label{classAudio__Manager_ac99dea8c4e9834868632c79d2e5754be}} 
+\index{Audio\_Manager@{Audio\_Manager}!music@{music}}
+\index{music@{music}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Music $\ast$$>$ Audio\+\_\+\+Manager\+::music}
+
+Contains all music. \mbox{\Hypertarget{classAudio__Manager_a4ebc347564474e35fccaccaedcfc8a45}\label{classAudio__Manager_a4ebc347564474e35fccaccaedcfc8a45}} 
+\index{Audio\_Manager@{Audio\_Manager}!sounds@{sounds}}
+\index{sounds@{sounds}!Audio\_Manager@{Audio\_Manager}}
+\doxysubsubsection{\texorpdfstring{sounds}{sounds}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Sound $\ast$$>$ Audio\+\_\+\+Manager\+::sounds}
+
+Contains all sounds. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Audio\+\_\+\+Manager.\+h\item 
+Audio\+\_\+\+Manager.\+cpp\end{DoxyCompactItemize}

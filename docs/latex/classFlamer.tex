@@ -1,0 +1,101 @@
+\hypertarget{classFlamer}{}\doxysection{Flamer Class Reference}
+\label{classFlamer}\index{Flamer@{Flamer}}
+
+
+{\ttfamily \#include $<$Flamer.\+h$>$}
+
+
+
+Inheritance diagram for Flamer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classFlamer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flamer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classFlamer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFlamer_a039af33f6a1c3294886fd03fbee8cbeb}{Flamer}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classFlamer_a5b390ffc3fedf0e45ee27781e067731f}{update}} () override
+\item 
+bool \mbox{\hyperlink{classFlamer_af58e66d0ec533175908529521b7bcd3f}{is\+\_\+flaming}} () const
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classFlamer_aedd77ef2c61c43adcc4a666ea1b1ecb8}{get\+\_\+rect}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A flamer in the game. The player can walk on the flamer when the flame is turned off but when the flame is turned on the player can\textquotesingle{}t pass through. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFlamer_a039af33f6a1c3294886fd03fbee8cbeb}\label{classFlamer_a039af33f6a1c3294886fd03fbee8cbeb}} 
+\index{Flamer@{Flamer}!Flamer@{Flamer}}
+\index{Flamer@{Flamer}!Flamer@{Flamer}}
+\doxysubsubsection{\texorpdfstring{Flamer()}{Flamer()}}
+{\footnotesize\ttfamily Flamer\+::\+Flamer (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a flamer. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classFlamer_a039af33f6a1c3294886fd03fbee8cbeb_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFlamer_aedd77ef2c61c43adcc4a666ea1b1ecb8}\label{classFlamer_aedd77ef2c61c43adcc4a666ea1b1ecb8}} 
+\index{Flamer@{Flamer}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Flamer@{Flamer}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Flamer\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the hitbox of the flamer. The hitbox grows when the flame height gets bigger. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a12b80139f4945017bbddc265b06af351}{Game\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classFlamer_af58e66d0ec533175908529521b7bcd3f}\label{classFlamer_af58e66d0ec533175908529521b7bcd3f}} 
+\index{Flamer@{Flamer}!is\_flaming@{is\_flaming}}
+\index{is\_flaming@{is\_flaming}!Flamer@{Flamer}}
+\doxysubsubsection{\texorpdfstring{is\_flaming()}{is\_flaming()}}
+{\footnotesize\ttfamily bool Flamer\+::is\+\_\+flaming (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns if the flame is active or not. \mbox{\Hypertarget{classFlamer_a5b390ffc3fedf0e45ee27781e067731f}\label{classFlamer_a5b390ffc3fedf0e45ee27781e067731f}} 
+\index{Flamer@{Flamer}!update@{update}}
+\index{update@{update}!Flamer@{Flamer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Flamer\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the flamer. Responsible for changing the height of the flame depending on the timer. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}{Game\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classFlamer_a5b390ffc3fedf0e45ee27781e067731f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Flamer.\+h\item 
+Flamer.\+cpp\end{DoxyCompactItemize}

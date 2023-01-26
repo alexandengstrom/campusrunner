@@ -1,0 +1,109 @@
+\hypertarget{classHealthpack}{}\doxysection{Healthpack Class Reference}
+\label{classHealthpack}\index{Healthpack@{Healthpack}}
+
+
+{\ttfamily \#include $<$Healthpack.\+h$>$}
+
+
+
+Inheritance diagram for Healthpack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classHealthpack__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Healthpack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classHealthpack__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHealthpack_a1e52c70622e0be1d34a02d4a3ca5366d}{Healthpack}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classHealthpack_a32278408ef0befa3052bae21e1c634ee}{update}} () override
+\item 
+bool \mbox{\hyperlink{classHealthpack_a660086c3266dd22e8f38ca2437667bf3}{is\+\_\+used}} () const
+\item 
+void \mbox{\hyperlink{classHealthpack_a97f70662aad0b432ca9e22504d96e591}{use}} ()
+\item 
+void \mbox{\hyperlink{classHealthpack_a3af9f1277a65cc4fb880639aa1bd5610}{render}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{classCamera}{Camera}} \&camera) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A healthpack in the game that the player can pick up to increase its health. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHealthpack_a1e52c70622e0be1d34a02d4a3ca5366d}\label{classHealthpack_a1e52c70622e0be1d34a02d4a3ca5366d}} 
+\index{Healthpack@{Healthpack}!Healthpack@{Healthpack}}
+\index{Healthpack@{Healthpack}!Healthpack@{Healthpack}}
+\doxysubsubsection{\texorpdfstring{Healthpack()}{Healthpack()}}
+{\footnotesize\ttfamily Healthpack\+::\+Healthpack (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a healthpack Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHealthpack_a1e52c70622e0be1d34a02d4a3ca5366d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealthpack_a660086c3266dd22e8f38ca2437667bf3}\label{classHealthpack_a660086c3266dd22e8f38ca2437667bf3}} 
+\index{Healthpack@{Healthpack}!is\_used@{is\_used}}
+\index{is\_used@{is\_used}!Healthpack@{Healthpack}}
+\doxysubsubsection{\texorpdfstring{is\_used()}{is\_used()}}
+{\footnotesize\ttfamily bool Healthpack\+::is\+\_\+used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns true if the healthpack is used, else false. \mbox{\Hypertarget{classHealthpack_a3af9f1277a65cc4fb880639aa1bd5610}\label{classHealthpack_a3af9f1277a65cc4fb880639aa1bd5610}} 
+\index{Healthpack@{Healthpack}!render@{render}}
+\index{render@{render}!Healthpack@{Healthpack}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Healthpack\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{classCamera}{Camera}} \&}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Tell the camera that the healthpack is ready to be rendered, but only if it has not been used. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_aff8c0ac9ad881d235b59a38e31d42cae}{Game\+\_\+\+Object}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classHealthpack_a3af9f1277a65cc4fb880639aa1bd5610_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classHealthpack_a32278408ef0befa3052bae21e1c634ee}\label{classHealthpack_a32278408ef0befa3052bae21e1c634ee}} 
+\index{Healthpack@{Healthpack}!update@{update}}
+\index{update@{update}!Healthpack@{Healthpack}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Healthpack\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Updates the texture of the healthpack. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a9c97b9a5f71ba9e0484463a8d4712a64}{Game\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classHealthpack_a97f70662aad0b432ca9e22504d96e591}\label{classHealthpack_a97f70662aad0b432ca9e22504d96e591}} 
+\index{Healthpack@{Healthpack}!use@{use}}
+\index{use@{use}!Healthpack@{Healthpack}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void Healthpack\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Tell the healthpack it has been used 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Healthpack.\+h\item 
+Healthpack.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classCamera}{}\doxysection{Camera Class Reference}
+\label{classCamera}\index{Camera@{Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+
+
+Collaboration diagram for Camera\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classCamera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCamera_a01f94c3543f56ede7af49dc778f19331}{Camera}} ()
+\item 
+void \mbox{\hyperlink{classCamera_ac3cd6d013949ee2194f2ccaa9c4420e9}{calculate\+\_\+offset}} (sf\+::\+Vector2f \&position, sf\+::\+Vector2f \&vel)
+\item 
+void \mbox{\hyperlink{classCamera_a133ed83c1e3126b0ebd1aa97d889f087}{render}} (sf\+::\+Render\+Window \&window, sf\+::\+Sprite \&object)
+\item 
+void \mbox{\hyperlink{classCamera_a69fb274d09e642e91590dea87dba7ff5}{render}} (sf\+::\+Render\+Window \&window, sf\+::\+Text \&object) const
+\item 
+void \mbox{\hyperlink{classCamera_ad95f75d420ce254d5d9728854da15b1e}{update\+\_\+dimensions}} (float w, float h)
+\item 
+void \mbox{\hyperlink{classCamera_ac51581301efe4ce283ab8813f7f9b9e4}{move\+\_\+layer}} (std\+::vector$<$ sf\+::\+Sprite $>$ \&sprites, sf\+::\+Vector2f const \&move\+\_\+factor) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A camera that follows the player around the map. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCamera_a01f94c3543f56ede7af49dc778f19331}\label{classCamera_a01f94c3543f56ede7af49dc778f19331}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a camera. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCamera_ac3cd6d013949ee2194f2ccaa9c4420e9}\label{classCamera_ac3cd6d013949ee2194f2ccaa9c4420e9}} 
+\index{Camera@{Camera}!calculate\_offset@{calculate\_offset}}
+\index{calculate\_offset@{calculate\_offset}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{calculate\_offset()}{calculate\_offset()}}
+{\footnotesize\ttfamily void Camera\+::calculate\+\_\+offset (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f \&}]{position,  }\item[{sf\+::\+Vector2f \&}]{vel }\end{DoxyParamCaption})}
+
+Calculate where to focus the camera depending on the players position. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCamera_ac3cd6d013949ee2194f2ccaa9c4420e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCamera_ac51581301efe4ce283ab8813f7f9b9e4}\label{classCamera_ac51581301efe4ce283ab8813f7f9b9e4}} 
+\index{Camera@{Camera}!move\_layer@{move\_layer}}
+\index{move\_layer@{move\_layer}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{move\_layer()}{move\_layer()}}
+{\footnotesize\ttfamily void Camera\+::move\+\_\+layer (\begin{DoxyParamCaption}\item[{std\+::vector$<$ sf\+::\+Sprite $>$ \&}]{sprites,  }\item[{sf\+::\+Vector2f const \&}]{move\+\_\+factor }\end{DoxyParamCaption}) const}
+
+Move the background layers the create a parallax effect. \mbox{\Hypertarget{classCamera_a133ed83c1e3126b0ebd1aa97d889f087}\label{classCamera_a133ed83c1e3126b0ebd1aa97d889f087}} 
+\index{Camera@{Camera}!render@{render}}
+\index{render@{render}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Camera\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Sprite \&}]{object }\end{DoxyParamCaption})}
+
+Render a game object to the window. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classCamera_a133ed83c1e3126b0ebd1aa97d889f087_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classCamera_a69fb274d09e642e91590dea87dba7ff5}\label{classCamera_a69fb274d09e642e91590dea87dba7ff5}} 
+\index{Camera@{Camera}!render@{render}}
+\index{render@{render}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Camera\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Text \&}]{object }\end{DoxyParamCaption}) const}
+
+Render a text object to the window. \mbox{\Hypertarget{classCamera_ad95f75d420ce254d5d9728854da15b1e}\label{classCamera_ad95f75d420ce254d5d9728854da15b1e}} 
+\index{Camera@{Camera}!update\_dimensions@{update\_dimensions}}
+\index{update\_dimensions@{update\_dimensions}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{update\_dimensions()}{update\_dimensions()}}
+{\footnotesize\ttfamily void Camera\+::update\+\_\+dimensions (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+Tell the camera what the width and the height of the current map is. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Camera.\+h\item 
+Camera.\+cpp\end{DoxyCompactItemize}

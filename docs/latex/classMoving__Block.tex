@@ -1,0 +1,97 @@
+\hypertarget{classMoving__Block}{}\doxysection{Moving\+\_\+\+Block Class Reference}
+\label{classMoving__Block}\index{Moving\_Block@{Moving\_Block}}
+
+
+{\ttfamily \#include $<$Moving\+\_\+\+Block.\+h$>$}
+
+
+
+Inheritance diagram for Moving\+\_\+\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMoving__Block__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Moving\+\_\+\+Block\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMoving__Block__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMoving__Block_abf2b58dfa5e2557008f6b057e9ea74c7}{Moving\+\_\+\+Block}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classMoving__Block_ab2af36259b4f7659e69a652bcc6c3991}{update}} (float friction, float gravity) override
+\item 
+void \mbox{\hyperlink{classMoving__Block_a4428f0325761043e4a5c4482be20d2f2}{reset}} () override
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classMoving__Block_ada349337f15b23e8d49c49736e1f512c}{get\+\_\+rect}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A moving block in the game. The player can walk on the moving block, but cant jump through it. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMoving__Block_abf2b58dfa5e2557008f6b057e9ea74c7}\label{classMoving__Block_abf2b58dfa5e2557008f6b057e9ea74c7}} 
+\index{Moving\_Block@{Moving\_Block}!Moving\_Block@{Moving\_Block}}
+\index{Moving\_Block@{Moving\_Block}!Moving\_Block@{Moving\_Block}}
+\doxysubsubsection{\texorpdfstring{Moving\_Block()}{Moving\_Block()}}
+{\footnotesize\ttfamily Moving\+\_\+\+Block\+::\+Moving\+\_\+\+Block (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Create a moving block. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMoving__Block_abf2b58dfa5e2557008f6b057e9ea74c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMoving__Block_ada349337f15b23e8d49c49736e1f512c}\label{classMoving__Block_ada349337f15b23e8d49c49736e1f512c}} 
+\index{Moving\_Block@{Moving\_Block}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Moving\_Block@{Moving\_Block}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Moving\+\_\+\+Block\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the hitbox of the game object. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a12b80139f4945017bbddc265b06af351}{Game\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classMoving__Block_a4428f0325761043e4a5c4482be20d2f2}\label{classMoving__Block_a4428f0325761043e4a5c4482be20d2f2}} 
+\index{Moving\_Block@{Moving\_Block}!reset@{reset}}
+\index{reset@{reset}!Moving\_Block@{Moving\_Block}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Block\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets position to starting position of the moving block. 
+
+Reimplemented from \mbox{\hyperlink{classMoving__Object_af27913d3af713b2d943c4339c96c8f07}{Moving\+\_\+\+Object}}.
+
+\mbox{\Hypertarget{classMoving__Block_ab2af36259b4f7659e69a652bcc6c3991}\label{classMoving__Block_ab2af36259b4f7659e69a652bcc6c3991}} 
+\index{Moving\_Block@{Moving\_Block}!update@{update}}
+\index{update@{update}!Moving\_Block@{Moving\_Block}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Block\+::update (\begin{DoxyParamCaption}\item[{float}]{friction,  }\item[{float}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Update the moving block. Responsible for moving the block right or left. 
+
+Implements \mbox{\hyperlink{classMoving__Object}{Moving\+\_\+\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Moving\+\_\+\+Block.\+h\item 
+Moving\+\_\+\+Block.\+cpp\end{DoxyCompactItemize}

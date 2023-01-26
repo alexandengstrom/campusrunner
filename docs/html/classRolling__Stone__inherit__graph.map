@@ -1,0 +1,6 @@
+<map id="Rolling_Stone" name="Rolling_Stone">
+<area shape="rect" id="node1" title=" " alt="" coords="29,1247,215,1485"/>
+<area shape="rect" id="node2" href="$classEnemy.html" title=" " alt="" coords="5,975,239,1199"/>
+<area shape="rect" id="node3" href="$classMoving__Object.html" title=" " alt="" coords="9,351,235,927"/>
+<area shape="rect" id="node4" href="$classGame__Object.html" title=" " alt="" coords="16,5,228,303"/>
+</map>

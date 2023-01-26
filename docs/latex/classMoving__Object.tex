@@ -1,0 +1,284 @@
+\hypertarget{classMoving__Object}{}\doxysection{Moving\+\_\+\+Object Class Reference}
+\label{classMoving__Object}\index{Moving\_Object@{Moving\_Object}}
+
+
+{\ttfamily \#include $<$Moving\+\_\+\+Object.\+h$>$}
+
+
+
+Inheritance diagram for Moving\+\_\+\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMoving__Object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Moving\+\_\+\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMoving__Object__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMoving__Object_a104031f9e7b4d29311f702a242b1e5c7}{Moving\+\_\+\+Object}} (float x, float y, int w, int h)
+\item 
+\mbox{\Hypertarget{classMoving__Object_aa395fbb3e20c69c203e8ca6d22d98ebe}\label{classMoving__Object_aa395fbb3e20c69c203e8ca6d22d98ebe}} 
+virtual void {\bfseries update} (float friction, float gravity)=0
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMoving__Object_a8fb2c8fc65914eef0eaadc3d43b62363}{get\+\_\+velocity}} () const
+\item 
+sf\+::\+Float\+Rect \mbox{\hyperlink{classMoving__Object_a28432ad4ab6dd81dc3a6b2e1da1e362a}{get\+\_\+rect}} () const override
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMoving__Object_aa9a95ce87be2d5845bb236cb0be38639}{get\+\_\+starting\+\_\+position}} () const
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_a3ba320133e6b6e64c6f99550de548802}{stop\+\_\+vertical}} ()
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_a95e52a8c5960a37681d73d846ab1681b}{stop\+\_\+horizontal}} ()
+\item 
+void \mbox{\hyperlink{classMoving__Object_aa845f35585d855891d2556309242226d}{update\+\_\+position}} ()
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_af27913d3af713b2d943c4339c96c8f07}{reset}} ()
+\item 
+bool \mbox{\hyperlink{classMoving__Object_af582d523e7cd439d9799c6cec51e2658}{is\+\_\+alive}} () const
+\item 
+void \mbox{\hyperlink{classMoving__Object_aa11256a0c74ae9168921e37aca2806fb}{kill}} ()
+\item 
+void \mbox{\hyperlink{classMoving__Object_a1d41f95a71b0561013a487a8acec2c70}{push}} (float force)
+\item 
+void \mbox{\hyperlink{classMoving__Object_a84cff50572c09597b093d7c1addd3eb8}{blow}} (float force)
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_a564fc15838a0c540294e89bd64e287ee}{change\+\_\+direction}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_a6d34b5be975320f7a824da1a97224d13}{update\+\_\+animation\+\_\+state}} ()
+\item 
+virtual void \mbox{\hyperlink{classMoving__Object_aab7c82fa7c9a71f4e96317442accb7c5}{update\+\_\+texture}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classMoving__Object_af0c3ebd8469069fcffffd957db2e1b17}{jumping}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMoving__Object_a25b58750b94fb0941d23dc4b9983beb2}{velocity}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classMoving__Object_a0ecc4b6254c7b2c11d4e1c39dcd90227}{starting\+\_\+position}}
+\item 
+bool \mbox{\hyperlink{classMoving__Object_a17f658f8f34c9c9b65290b5c802c8730}{alive}}
+\item 
+sf\+::\+Clock \mbox{\hyperlink{classMoving__Object_aa26356d7712e281f25e3b9fd89e12aeb}{animation\+\_\+timer}}
+\item 
+int \mbox{\hyperlink{classMoving__Object_af096ef5cf85bb5530d34255dae21259d}{animation\+\_\+frame}}
+\item 
+Animation\+\_\+\+State \mbox{\hyperlink{classMoving__Object_ae0bfe659ff621d94a59b6af6d857705a}{current\+\_\+animation\+\_\+state}}
+\item 
+int \mbox{\hyperlink{classMoving__Object_a6b0722f4c672bfba21498b29d05bca32}{animation\+\_\+frame\+\_\+rate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The interface of all moving game objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMoving__Object_a104031f9e7b4d29311f702a242b1e5c7}\label{classMoving__Object_a104031f9e7b4d29311f702a242b1e5c7}} 
+\index{Moving\_Object@{Moving\_Object}!Moving\_Object@{Moving\_Object}}
+\index{Moving\_Object@{Moving\_Object}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{Moving\_Object()}{Moving\_Object()}}
+{\footnotesize\ttfamily Moving\+\_\+\+Object\+::\+Moving\+\_\+\+Object (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Creates a moving object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMoving__Object_a84cff50572c09597b093d7c1addd3eb8}\label{classMoving__Object_a84cff50572c09597b093d7c1addd3eb8}} 
+\index{Moving\_Object@{Moving\_Object}!blow@{blow}}
+\index{blow@{blow}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{blow()}{blow()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::blow (\begin{DoxyParamCaption}\item[{float}]{force }\end{DoxyParamCaption})}
+
+Pushes the moving object upwards in a soaring manner. The push gets more fierce close to the blowing object. \mbox{\Hypertarget{classMoving__Object_a564fc15838a0c540294e89bd64e287ee}\label{classMoving__Object_a564fc15838a0c540294e89bd64e287ee}} 
+\index{Moving\_Object@{Moving\_Object}!change\_direction@{change\_direction}}
+\index{change\_direction@{change\_direction}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{change\_direction()}{change\_direction()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::change\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Inverts horizontal velocity. 
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a02cb0e7ae5b3f766e1fc9f759f565cf7}{Rolling\+\_\+\+Stone}}.
+
+\mbox{\Hypertarget{classMoving__Object_a28432ad4ab6dd81dc3a6b2e1da1e362a}\label{classMoving__Object_a28432ad4ab6dd81dc3a6b2e1da1e362a}} 
+\index{Moving\_Object@{Moving\_Object}!get\_rect@{get\_rect}}
+\index{get\_rect@{get\_rect}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{get\_rect()}{get\_rect()}}
+{\footnotesize\ttfamily sf\+::\+Float\+Rect Moving\+\_\+\+Object\+::get\+\_\+rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the hitbox of the next frame by adding the velocity. 
+
+Reimplemented from \mbox{\hyperlink{classGame__Object_a12b80139f4945017bbddc265b06af351}{Game\+\_\+\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a260d4f1a63947fbd1aaf00a36b29e0ec}{Rolling\+\_\+\+Stone}}.
+
+\mbox{\Hypertarget{classMoving__Object_aa9a95ce87be2d5845bb236cb0be38639}\label{classMoving__Object_aa9a95ce87be2d5845bb236cb0be38639}} 
+\index{Moving\_Object@{Moving\_Object}!get\_starting\_position@{get\_starting\_position}}
+\index{get\_starting\_position@{get\_starting\_position}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{get\_starting\_position()}{get\_starting\_position()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Moving\+\_\+\+Object\+::get\+\_\+starting\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current starting position as a Vector2f. \mbox{\Hypertarget{classMoving__Object_a8fb2c8fc65914eef0eaadc3d43b62363}\label{classMoving__Object_a8fb2c8fc65914eef0eaadc3d43b62363}} 
+\index{Moving\_Object@{Moving\_Object}!get\_velocity@{get\_velocity}}
+\index{get\_velocity@{get\_velocity}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{get\_velocity()}{get\_velocity()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Moving\+\_\+\+Object\+::get\+\_\+velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the current velocity as a Vector2f. \mbox{\Hypertarget{classMoving__Object_af582d523e7cd439d9799c6cec51e2658}\label{classMoving__Object_af582d523e7cd439d9799c6cec51e2658}} 
+\index{Moving\_Object@{Moving\_Object}!is\_alive@{is\_alive}}
+\index{is\_alive@{is\_alive}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{is\_alive()}{is\_alive()}}
+{\footnotesize\ttfamily bool Moving\+\_\+\+Object\+::is\+\_\+alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+True if the moving object is alive, else false. \mbox{\Hypertarget{classMoving__Object_aa11256a0c74ae9168921e37aca2806fb}\label{classMoving__Object_aa11256a0c74ae9168921e37aca2806fb}} 
+\index{Moving\_Object@{Moving\_Object}!kill@{kill}}
+\index{kill@{kill}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets alive to false. \mbox{\Hypertarget{classMoving__Object_a1d41f95a71b0561013a487a8acec2c70}\label{classMoving__Object_a1d41f95a71b0561013a487a8acec2c70}} 
+\index{Moving\_Object@{Moving\_Object}!push@{push}}
+\index{push@{push}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::push (\begin{DoxyParamCaption}\item[{float}]{force }\end{DoxyParamCaption})}
+
+Pushes the moving object left or right. \mbox{\Hypertarget{classMoving__Object_af27913d3af713b2d943c4339c96c8f07}\label{classMoving__Object_af27913d3af713b2d943c4339c96c8f07}} 
+\index{Moving\_Object@{Moving\_Object}!reset@{reset}}
+\index{reset@{reset}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets velocity, position and alive of the moving object. 
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a9b98867f1b4c68e678d1ab554c9828c0}{Player}}, and \mbox{\hyperlink{classMoving__Block_a4428f0325761043e4a5c4482be20d2f2}{Moving\+\_\+\+Block}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classMoving__Object_af27913d3af713b2d943c4339c96c8f07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classMoving__Object_a95e52a8c5960a37681d73d846ab1681b}\label{classMoving__Object_a95e52a8c5960a37681d73d846ab1681b}} 
+\index{Moving\_Object@{Moving\_Object}!stop\_horizontal@{stop\_horizontal}}
+\index{stop\_horizontal@{stop\_horizontal}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{stop\_horizontal()}{stop\_horizontal()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::stop\+\_\+horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the horizontal velocity to 0. \mbox{\Hypertarget{classMoving__Object_a3ba320133e6b6e64c6f99550de548802}\label{classMoving__Object_a3ba320133e6b6e64c6f99550de548802}} 
+\index{Moving\_Object@{Moving\_Object}!stop\_vertical@{stop\_vertical}}
+\index{stop\_vertical@{stop\_vertical}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{stop\_vertical()}{stop\_vertical()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::stop\+\_\+vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the vertical velocity to 0. 
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_add18d7bca060e8838009c6a3af7dc195}{Rolling\+\_\+\+Stone}}.
+
+\mbox{\Hypertarget{classMoving__Object_a6d34b5be975320f7a824da1a97224d13}\label{classMoving__Object_a6d34b5be975320f7a824da1a97224d13}} 
+\index{Moving\_Object@{Moving\_Object}!update\_animation\_state@{update\_animation\_state}}
+\index{update\_animation\_state@{update\_animation\_state}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{update\_animation\_state()}{update\_animation\_state()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::update\+\_\+animation\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Used in derived classes. Updates animation state, such as \char`\"{}\+RUNNING LEFT\char`\"{} or \char`\"{}\+JUMPING RIGHT\char`\"{}. 
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a0b5b962fbf7e4914eaa374e4feb16a96}{Rolling\+\_\+\+Stone}}, and \mbox{\hyperlink{classEnemy_a91eb14875532107ea1ce5018b2f36571}{Enemy}}.
+
+\mbox{\Hypertarget{classMoving__Object_aa845f35585d855891d2556309242226d}\label{classMoving__Object_aa845f35585d855891d2556309242226d}} 
+\index{Moving\_Object@{Moving\_Object}!update\_position@{update\_position}}
+\index{update\_position@{update\_position}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{update\_position()}{update\_position()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::update\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the position. \mbox{\Hypertarget{classMoving__Object_aab7c82fa7c9a71f4e96317442accb7c5}\label{classMoving__Object_aab7c82fa7c9a71f4e96317442accb7c5}} 
+\index{Moving\_Object@{Moving\_Object}!update\_texture@{update\_texture}}
+\index{update\_texture@{update\_texture}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{update\_texture()}{update\_texture()}}
+{\footnotesize\ttfamily void Moving\+\_\+\+Object\+::update\+\_\+texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Updates sprite texture depending on animation state, such as \char`\"{}\+RUNNING LEFT\char`\"{} or \char`\"{}\+JUMPING RIGHT\char`\"{}. 
+
+Reimplemented in \mbox{\hyperlink{classRolling__Stone_a50c3d143ec4ea6b32eb01a5c7bee9197}{Rolling\+\_\+\+Stone}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classMoving__Object_aab7c82fa7c9a71f4e96317442accb7c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMoving__Object_a17f658f8f34c9c9b65290b5c802c8730}\label{classMoving__Object_a17f658f8f34c9c9b65290b5c802c8730}} 
+\index{Moving\_Object@{Moving\_Object}!alive@{alive}}
+\index{alive@{alive}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{alive}{alive}}
+{\footnotesize\ttfamily bool Moving\+\_\+\+Object\+::alive\hspace{0.3cm}{\ttfamily [protected]}}
+
+True if the object is alive, else false. \mbox{\Hypertarget{classMoving__Object_af096ef5cf85bb5530d34255dae21259d}\label{classMoving__Object_af096ef5cf85bb5530d34255dae21259d}} 
+\index{Moving\_Object@{Moving\_Object}!animation\_frame@{animation\_frame}}
+\index{animation\_frame@{animation\_frame}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{animation\_frame}{animation\_frame}}
+{\footnotesize\ttfamily int Moving\+\_\+\+Object\+::animation\+\_\+frame\hspace{0.3cm}{\ttfamily [protected]}}
+
+Frame to render. \mbox{\Hypertarget{classMoving__Object_a6b0722f4c672bfba21498b29d05bca32}\label{classMoving__Object_a6b0722f4c672bfba21498b29d05bca32}} 
+\index{Moving\_Object@{Moving\_Object}!animation\_frame\_rate@{animation\_frame\_rate}}
+\index{animation\_frame\_rate@{animation\_frame\_rate}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{animation\_frame\_rate}{animation\_frame\_rate}}
+{\footnotesize\ttfamily int Moving\+\_\+\+Object\+::animation\+\_\+frame\+\_\+rate\hspace{0.3cm}{\ttfamily [protected]}}
+
+Frame rate. \mbox{\Hypertarget{classMoving__Object_aa26356d7712e281f25e3b9fd89e12aeb}\label{classMoving__Object_aa26356d7712e281f25e3b9fd89e12aeb}} 
+\index{Moving\_Object@{Moving\_Object}!animation\_timer@{animation\_timer}}
+\index{animation\_timer@{animation\_timer}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{animation\_timer}{animation\_timer}}
+{\footnotesize\ttfamily sf\+::\+Clock Moving\+\_\+\+Object\+::animation\+\_\+timer\hspace{0.3cm}{\ttfamily [protected]}}
+
+An animation timer to support animation of textures. \mbox{\Hypertarget{classMoving__Object_ae0bfe659ff621d94a59b6af6d857705a}\label{classMoving__Object_ae0bfe659ff621d94a59b6af6d857705a}} 
+\index{Moving\_Object@{Moving\_Object}!current\_animation\_state@{current\_animation\_state}}
+\index{current\_animation\_state@{current\_animation\_state}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{current\_animation\_state}{current\_animation\_state}}
+{\footnotesize\ttfamily Animation\+\_\+\+State Moving\+\_\+\+Object\+::current\+\_\+animation\+\_\+state\hspace{0.3cm}{\ttfamily [protected]}}
+
+Animation state of the moving object, such as \char`\"{}\+RUNNING LEFT\char`\"{} or \char`\"{}\+JUMPING RIGHT\char`\"{}. \mbox{\Hypertarget{classMoving__Object_af0c3ebd8469069fcffffd957db2e1b17}\label{classMoving__Object_af0c3ebd8469069fcffffd957db2e1b17}} 
+\index{Moving\_Object@{Moving\_Object}!jumping@{jumping}}
+\index{jumping@{jumping}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{jumping}{jumping}}
+{\footnotesize\ttfamily bool Moving\+\_\+\+Object\+::jumping\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if moving objects has jumped, else false. \mbox{\Hypertarget{classMoving__Object_a0ecc4b6254c7b2c11d4e1c39dcd90227}\label{classMoving__Object_a0ecc4b6254c7b2c11d4e1c39dcd90227}} 
+\index{Moving\_Object@{Moving\_Object}!starting\_position@{starting\_position}}
+\index{starting\_position@{starting\_position}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{starting\_position}{starting\_position}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Moving\+\_\+\+Object\+::starting\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current starting position of the moving object. \mbox{\Hypertarget{classMoving__Object_a25b58750b94fb0941d23dc4b9983beb2}\label{classMoving__Object_a25b58750b94fb0941d23dc4b9983beb2}} 
+\index{Moving\_Object@{Moving\_Object}!velocity@{velocity}}
+\index{velocity@{velocity}!Moving\_Object@{Moving\_Object}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Moving\+\_\+\+Object\+::velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current velocity of the moving object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Moving\+\_\+\+Object.\+h\item 
+Moving\+\_\+\+Object.\+cpp\end{DoxyCompactItemize}
