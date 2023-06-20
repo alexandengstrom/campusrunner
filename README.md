@@ -1,7 +1,5 @@
 # Campus Runner
-
-## 2D Platformer game created in C++ using the SFML library.
-Full documentation can be found in docs/html/index.html
+"CampusRunner" is a compelling 2D platformer developed in C++ with the utilization of the SFML library. This project centers around the pursuit of a deeper understanding of object-oriented programming principles. In the game, you assume the role of a student racing against time to reach their classroom. Overcoming enemies and obstacles becomes imperative along the way.
 
 ## Pictures from the game:
 ![rsz_menu_background](https://user-images.githubusercontent.com/123507241/215070037-7132009c-5af6-4249-a2bb-cb25e68f1d3c.png)
